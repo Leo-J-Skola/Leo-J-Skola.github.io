@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leo Jasper CV/Portfolio</title>
+    <!--Icons used come from cloudflare using cdn. Helps me skip using svg and the need of having the files locally-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+
+<!-- The whole portfolio window -->
+<div class="portfolio-container">
+    <!-- Navigation bar only -->
+    <nav class="navbar">
+        <div class="nav-header">PORTFOLIO</div>
+        <!--fas fa are the icon codes used to show them from the cloudflare link-->
+        <div class="nav-menu">
+            <button class="nav-button active" data-target="about" id="nav-about">
+                <i class="fas fa-user"></i><p>ABOUT</p>
+            </button><button class="nav-button" data-target="resume" id="nav-resume">
+                <i class="fas fa-file-alt"></i><p>RESUME</p></button>
+            <button class="nav-button" data-target="works" id="nav-works">
+                <i class="fas fa-briefcase"></i><p>WORKS</p></button>
+            <button class="nav-button" data-target="contact" id="nav-contact">
+                <i class="fas fa-envelope"></i><p>CONTACT</p></button>
+        </div>
+        <div class="nav-info">
+            <span class="location"><i class="fas fa-map-marker-alt"></i>Uddevalla, Sweden</span>
+            <span class="phone-number"><br><i class="fas fa-phone"></i>+46 764 222 184</span>
+            <span class="email"><br><i class="fas fa-envelope"></i>leo.c.jasper@gmail.com</span>
+
+        </div>
+
+        <!-- Footer, not at the bottom because i want it to fit with the general aesthetic -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>©2025 Leo Jasper. All rights reserved. Designed and developed by Leo Jasper</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/Leo-J-Skola/" class="footer-link" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/leo-jasper-739a33207/" class="footer-link" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a class="footer-link" id="footer-contact" onclick="document.getElementById('nav-contact').click();">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </footer>
+    </nav>
+
+    <!-- Profile and pages content -->
+    <div class="main-content">
+        <!-- Profile only -->
+        <div class="profile-section">
+            <img src="https://media.licdn.com/dms/image/v2/D4D03AQHWTLwKJNYwaw/profile-displayphoto-shrink_800_800/B4DZbDcHkEHEAg-/0/1747035651059?e=1752710400&v=beta&t=dxks-0xh9-3pks8ZB9SFacbmNpK3Tz9-iKkVnu2cl-Q" alt="Profile Photo" class="profile-image">
+            <div class ="profile-info">
+            <h1 class="profile-name">Leo Jasper</h1>
+            <p class="profile-title">Java developer student</p>
+            </div>
+            <!--Targeting _blank will open link in a new tab-->
+            <div class="my-links">
+                <a href="https://github.com/Leo-J-Skola/" class="social-link" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/leo-jasper-739a33207/" class="social-link" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+            <button class="contact-button">Contact Me</button>
+        </div>
+
+        <!-- Pages section only -->
+        <div class="page-section">
+            <!-- About page -->
+            <div class="page active" id="about">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-text">
+                    Im a curious, motivated, and a determined guy that is currently studying Java development at Javautvecklare YH in Göteborg. Over the past year, Ive worked on a couple projects using Java, Spring Boot, MongoDB, REST APIs, and React.
+                </p>
+                <p class="section-text">
+                    Im a problem solver and sometimes a bit too much of a perfectionist. Creating things and solving issues is something i love. Im determined and i love a challenge to make things work. Im also a social person where my communication skills help me be positive and productive
+                </p>
+                <h3>My Skills</h3>
+                <div class="my-skills">
+                    <div class="skill">HTML5</div>
+                    <div class="skill">CSS3</div>
+                    <div class="skill">JavaScript</div>
+                    <div class="skill">Java</div>
+                    <div class="skill">React</div>
+                    <div class="skill">Node.js</div>
+                    <div class="skill">MongoDB</div>
+                    <div class="skill">Git</div>
+                    <div class="skill">UI/UX Design</div>
+                    <div class="skill">Windows</div>
+                    <div class="skill">Windows Server</div>
+                </div>
+            </div>
+
+            <!-- Resume page -->
+            <div class="page" id="resume">
+                <h2 class="section-title">My Resume</h2>
+                <p class="section-text">
+                    Heres a summary of my journey
+                </p>
+                <h3>Education</h3>
+                <div class="timeline">
+                    <div class="timeline-circle">
+                        <div class="timeline-date">Present - 2026</div>
+                        <h4 class="timeline-title">Javadeveloper YH 2024</h4>
+                        <div class="timeline-location">Göteborg</div>
+                        <p class="section-text">
+                            Currently studying Java development, with courses in Spring Boot/Security, REST APIs, MongoDB, Docker and frontend integration. I am now going into my second year
+                        </p>
+                    </div>
+                </div>
+                <h3>Experience</h3>
+                <div class="timeline">
+                    <div class="timeline-circle">
+                        <div class="timeline-date">2023 - Present</div>
+                        <h4 class="timeline-title">Personal Projects & Open Source Contributions</h4>
+                        <div class="timeline-location">Independent</div>
+                        <p class="section-text">
+                            Created a buff tracker website (local) for a game and i have contributed to addons for games and wrote a custom Discord bot using JavaScript and Node.js
+                        </p>
+                    </div>
+                    <div class="timeline-circle">
+                        <div class="timeline-date">2019 - 2021</div>
+                        <h4 class="timeline-title">HP Printer Software/Hardware Support</h4>
+                        <div class="timeline-location">Sykes, Ed</div>
+                        <p class="section-text">
+                            Worked with repairing and troubleshooting HP printers. Provided software support for customers, including driver installation and network setup. Knowledge of printer hardware was sometimes essential for this role
+                        </p>
+                    </div>
+                    <div class="timeline-circle">
+                        <div class="timeline-date">2014 - 2017</div>
+                        <h4 class="timeline-title">IT Program (High School)</h4>
+                        <div class="timeline-location">Thorén Innovation School</div>
+                        <p class="section-text">
+                            Studied HTML, CSS, PHP and JavaScript, Windows Server. We also learned how to troubleshoot Windows and MacOS software issues
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Works page / My projects -->
+            <div class="page" id="works">
+                <h2 class="section-title">My Works</h2>
+                <p class="section-text">
+                    Here are some of my recent projects. Each one had its own challenges but i got to learn alot
+                </p>
+                <p class="section-note">
+                    Note: <br>Clicking on the cards will bring you to my GitHub repository for each project
+                </p>
+                <div class="projects-grid">
+                    <div class="project-card" data-link="https://github.com/Leo-J-Skola/Frontend_Grupp">
+                        <img src="banner/GitHub_Logo_White.png" alt="Project 2" class="project-image">
+                        <div class="project-content">
+                            <h3 class="project-title">Fullstack Hotel Booking Website</h3>
+                            <p class="project-description">
+                                An Airbnb-like reservation system built from scratch.
+                                The frontend is developed in React, while the backend handles REST services using both Node.js and Java.
+                                Users can search, filter, book, and manage houses/apartments
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">React</span>
+                                <span class="project-tag">Node.js</span>
+                                <span class="project-tag">HTML</span>
+                                <span class="project-tag">CSS</span>
+                                <span class="project-tag">JavaScript</span>
+                                <span class="project-tag">MongoDB</span>
+                                <span class="project-tag">Java</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-link="https://github.com/Leo-J-Skola/spring_security">
+                        <img src="banner/GitHub_Logo_White.png" alt="Project 1" class="project-image">
+                        <div class="project-content">
+                            <h3 class="project-title">Secure Login System with Spring Security & JWT</h3>
+                            <p class="project-description">
+                                A backend login and registration system built using Spring Boot, Spring Security, and JWT authentication.
+                                This supports user registration, role assignment, secure login with JWT token generation, and HttpOnly cookie management
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">Java</span>
+                                <span class="project-tag">Spring Boot</span>
+                                <span class="project-tag">Spring Security</span>
+                                <span class="project-tag">JWT</span>
+                                <span class="project-tag">Maven</span>
+                                <span class="project-tag">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-link="https://github.com/Leo-J-Skola/PlantSwap">
+                        <img src="banner/GitHub_Logo_White.png" alt="Project 2" class="project-image">
+                        <div class="project-content">
+                            <h3 class="project-title">PlantSwap API</h3>
+                            <p class="project-description">
+                                A REST API for trading and selling plants. Made using Spring Boot, and it was documented with Postman.
+                                The API allows someone to register, manage plants, trade plants in a securely by ownership and role validation
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">Java</span>
+                                <span class="project-tag">Spring Boot</span>
+                                <span class="project-tag">MongoDB</span>
+                                <span class="project-tag">Postman</span>
+                                <span class="project-tag">Git</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-link="https://github.com/Leo-J-Skola/Portfolio">
+                        <img src="banner/GitHub_Logo_White.png" alt="Project 2" class="project-image">
+                        <div class="project-content">
+                            <h3 class="project-title">Portfolio Website (This one!)</h3>
+                            <p class="project-description">
+                                My personal portfolio website designed to show you more about me, my projects, experience, and skills in a better way
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">HTML</span>
+                                <span class="project-tag">CSS</span>
+                                <span class="project-tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact page / Email me page -->
+            <div class="page" id="contact">
+                <h2 class="section-title">Contact Me</h2>
+                <p class="section-text">
+                    You can send an email directly to me using this form!
+                </p>
+                <p class="section-note">
+                    Note: <br> Submitting will open your email client with your subject and message prefilled to my email address
+                </p>
+                <div class="contact-form">
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" id="subject" class="subject-input" placeholder="Title">
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" class="message-input" placeholder=""></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
